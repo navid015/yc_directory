@@ -15,6 +15,10 @@ export const STARTUPS_QUERY =
   image,
 }`);
 
+
+
+// && !defined($search) || title match $search || category match $search || author->name match $search]
+
 export const STARTUP_BY_ID_QUERY =
     defineQuery(`*[_type == "startup" && _id == $id][0]{
   _id, 
