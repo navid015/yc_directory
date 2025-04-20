@@ -6,10 +6,11 @@ module.exports = {
       ignoreDuringBuilds: true,
     },
   }
-  
+
 const nextConfig = {
     images: {
         dangerouslyAllowSVG: true,
+        domains: ['avatars.githubusercontent.com'],
         remotePatterns: [
             {
                 protocol: "https",
@@ -28,7 +29,7 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
 
 
     // experimental: {
